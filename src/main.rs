@@ -35,8 +35,6 @@ Calculate the horizontal position and depth you would have after following the p
 What do you get if you multiply your final horizontal position by your final depth?
 */
 use std::fs;
-use std::io;
-
 
 #[derive(Debug)]
 pub enum Direction {
@@ -51,7 +49,7 @@ pub struct Movement {
     magnitude: usize,
 }
 
-pub struct final_vector {
+pub struct FinalVector {
     distance: usize,
     depth: usize,
 }
@@ -104,17 +102,17 @@ pub fn direction_detect(str_input: &str) -> Direction {
     direction_detected
 }
 
-fn final_vector(movements: Vec<Movement>) -> final_vector {
+fn final_vector_find(movements: Vec<Movement>) -> FinalVector {
     let mut distance: usize = 0;
     let mut depth: usize = 0;
-    for i in movements {
+    for i in 0..movements.len() {
         match movements[i].direction {
             Direction::Forward => distance += movements[i].magnitude,
             Direction::Down => depth += movements[i].magnitude,
             Direction::Up => depth -= movements[i].magnitude,
         }
     }
-    let final_vector = final_vector {
+    let final_vector = FinalVector {
         distance,
         depth,
     };
@@ -122,9 +120,10 @@ fn final_vector(movements: Vec<Movement>) -> final_vector {
 }
 
 fn main() {
-    let split_list = read_input_file();
-    let split_list_split = split_string_by_whitespace(split_list);
+    let split_list: Vec<String> = read_input_file();
+    let split_list_split: Vec<String> = split_string_by_whitespace(split_list);
     let movement_vectors: Vec<Movement> = movement_vectors(split_list_split);
-    let FinalVector = final_vector(movement_vectors);
-    println!("Final vector:\n Distance: {}, Depth: {}", FinalVector.distance, FinalVector.depth);
+    let final_vector: FinalVector = final_vector_find(movement_vectors);
+    let multiplied: usize = final_vector.depth * final_vector.distance;
+    println!("Final vector:\nDistance: {}, Depth: {}.\nMultiplied they are: {}.", final_vector.distance, final_vector.depth, multiplied);
 }
