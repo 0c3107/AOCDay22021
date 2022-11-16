@@ -7,8 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f83e4bc-7501-40d3-9f8b-805b060ddd59" name="Changes" comment="Remove big comment in main file in favour of README.md.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1f83e4bc-7501-40d3-9f8b-805b060ddd59" name="Changes" comment="Part 2 working.">
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <updated>1668605445272</updated>
       <workItem from="1668605446423" duration="2886000" />
       <workItem from="1668609113908" duration="8652000" />
-      <workItem from="1668629384716" duration="961000" />
+      <workItem from="1668629384716" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1668626418251</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668629002447</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Part 2 working.">
+      <created>1668630401387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668630401387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +140,8 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Part 1 working" />
     <MESSAGE value="Remove big comment in main file in favour of README.md." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove big comment in main file in favour of README.md." />
+    <MESSAGE value="Part 2 working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 2 working." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

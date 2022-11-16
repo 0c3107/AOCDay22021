@@ -1,13 +1,11 @@
 use std::fs;
 
-#[derive(Debug)]
 pub enum Direction {
     Forward,
     Down,
     Up,
 }
 
-#[derive(Debug)]
 pub struct Movement {
     direction: Direction,
     magnitude: usize,
