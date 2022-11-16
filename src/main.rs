@@ -20,25 +20,25 @@ pub struct FinalVector {
 
 fn read_input_file() -> Vec<String> {
     let data = fs::read_to_string("resource/input").expect("Unable to read file");
-    let split = data.split("\n");
+    let split = data.split('\n');
     let mut data_vec: Vec<String> = Vec::new();
     for s in split {
         let s = s.trim();
         data_vec.push(s.to_string());
     }
-    return data_vec;
+    data_vec
 }
 
 fn split_string_by_whitespace(list: Vec<String>) -> Vec<String> {
     let mut split_list: Vec<String> = Vec::new();
     for s in list {
-        let split = s.split(" ");
+        let split = s.split(' ');
         for s in split {
             let s = s.trim();
             split_list.push(s.to_string());
         }
     }
-    return split_list;
+    split_list
 }
 
 fn movement_vectors(vec: Vec<String>) -> Vec<Movement> {
@@ -57,13 +57,12 @@ fn movement_vectors(vec: Vec<String>) -> Vec<Movement> {
 }
 
 pub fn direction_detect(str_input: &str) -> Direction {
-    let direction_detected = match str_input {
-        "forward" => Direction::Forward,
-        "down" => Direction::Down,
-        "up" => Direction::Up,
+    match str_input {
+        "F" => Direction::Forward,
+        "D" => Direction::Down,
+        "U" => Direction::Up,
         _ => panic!("Invalid direction"),
-    };
-    direction_detected
+    }
 }
 
 fn final_vector_find(movements: Vec<Movement>) -> FinalVector {
@@ -76,11 +75,10 @@ fn final_vector_find(movements: Vec<Movement>) -> FinalVector {
             Direction::Up => depth -= movements[i].magnitude,
         }
     }
-    let final_vector = FinalVector {
+    FinalVector {
         distance,
         depth,
-    };
-    return final_vector;
+    }
 }
 
 // Part 2 code
@@ -99,11 +97,10 @@ fn final_vector_find_part_2(movements: Vec<Movement>) -> FinalVector {
             Direction::Up => aim -= movements[i].magnitude,
         }
     }
-    let final_vector = FinalVector {
+    FinalVector {
         distance,
         depth,
-    };
-    final_vector
+    }
 }
 
 fn main() {
