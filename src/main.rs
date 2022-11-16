@@ -18,6 +18,8 @@ pub struct FinalVector {
     depth: usize,
 }
 
+// Part 1 functions
+
 fn read_input_file() -> Vec<String> {
     let data = fs::read_to_string("resource/input").expect("Unable to read file");
     let split = data.split("\n");
@@ -83,11 +85,36 @@ fn final_vector_find(movements: Vec<Movement>) -> FinalVector {
     return final_vector;
 }
 
+// Part 2 code
+
+fn final_vector_find_part_2(movements: Vec<Movement>) -> FinalVector {
+    let mut aim: usize = 0;
+    let mut depth: usize = 0;
+    let mut distance: usize = 0;
+    for i in 0..movements.len() {
+        match movements[i].direction {
+            Direction::Forward => {
+                distance += movements[i].magnitude;
+                depth += aim * movements[i].magnitude;
+            },
+            Direction::Down => aim += movements[i].magnitude,
+            Direction::Up => aim -= movements[i].magnitude,
+        }
+    }
+    let final_vector = FinalVector {
+        distance,
+        depth,
+    };
+    final_vector
+}
+
 fn main() {
     let split_list: Vec<String> = read_input_file();
     let split_list_split: Vec<String> = split_string_by_whitespace(split_list);
     let movement_vectors: Vec<Movement> = movement_vectors(split_list_split);
-    let final_vector: FinalVector = final_vector_find(movement_vectors);
-    let multiplied: usize = final_vector.depth * final_vector.distance;
-    println!("Final vector:\nDistance: {}, Depth: {}.\nMultiplied they are: {}.", final_vector.distance, final_vector.depth, multiplied);
+    //let final_vector_part_1: FinalVector = final_vector_find(movement_vectors);
+    let final_vector: FinalVector = final_vector_find_part_2(movement_vectors);
+    //let multiplied: usize = final_vector_part_1.depth * final_vector_part_1.distance;
+    let multiplied2: usize = final_vector.depth * final_vector.distance;
+    println!("Final vector:\nDistance: {}, Depth: {}.\nMultiplied they are: {}.", final_vector.distance, final_vector.depth, multiplied2);
 }
