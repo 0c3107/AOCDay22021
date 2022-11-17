@@ -57,12 +57,13 @@ fn movement_vectors(vec: Vec<String>) -> Vec<Movement> {
 }
 
 pub fn direction_detect(str_input: &str) -> Direction {
-    match str_input {
-        "F" => Direction::Forward,
-        "D" => Direction::Down,
-        "U" => Direction::Up,
+    let direction_detected = match str_input {
+        "forward" => Direction::Forward,
+        "down" => Direction::Down,
+        "up" => Direction::Up,
         _ => panic!("Invalid direction"),
-    }
+    };
+    direction_detected
 }
 
 fn final_vector_find(movements: Vec<Movement>) -> FinalVector {

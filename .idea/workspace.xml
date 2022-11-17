@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f83e4bc-7501-40d3-9f8b-805b060ddd59" name="Changes" comment="Removed unnecessary derivations.">
+    <list default="true" id="1f83e4bc-7501-40d3-9f8b-805b060ddd59" name="Changes" comment="Fix idiomatic issues.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
@@ -52,7 +52,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
     &quot;org.rust.disableDetachedFileInspection/home/will/code/rust/advent/2021/day2/src/mod.rs&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust.cargo.check&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RunManager">
@@ -89,7 +89,9 @@
       <updated>1668605445272</updated>
       <workItem from="1668605446423" duration="2886000" />
       <workItem from="1668609113908" duration="8652000" />
-      <workItem from="1668629384716" duration="3712000" />
+      <workItem from="1668629384716" duration="3745000" />
+      <workItem from="1668674743381" duration="1519000" />
+      <workItem from="1668678066460" duration="226000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1668626418251</created>
@@ -126,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668630508948</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix idiomatic issues.">
+      <created>1668643138601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668643138601</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +159,8 @@
     <MESSAGE value="Remove big comment in main file in favour of README.md." />
     <MESSAGE value="Part 2 working." />
     <MESSAGE value="Removed unnecessary derivations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary derivations." />
+    <MESSAGE value="Fix idiomatic issues." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix idiomatic issues." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
