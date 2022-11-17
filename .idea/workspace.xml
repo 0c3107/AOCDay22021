@@ -7,9 +7,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f83e4bc-7501-40d3-9f8b-805b060ddd59" name="Changes" comment="Fix idiomatic issues.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+    <list default="true" id="1f83e4bc-7501-40d3-9f8b-805b060ddd59" name="Changes" comment="Fix broken function.">
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo.Run">
+    <configuration name="Run advent_of_code_day_2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package advent_of_code_day_2 --bin advent_of_code_day_2" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package Advent_of_Code_Day_2 --bin Advent_of_Code_Day_2" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -73,6 +89,11 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Run advent_of_code_day_2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="runExternalLinterOnTheFly" value="true" />
@@ -91,7 +112,7 @@
       <workItem from="1668609113908" duration="8652000" />
       <workItem from="1668629384716" duration="3745000" />
       <workItem from="1668674743381" duration="1519000" />
-      <workItem from="1668678066460" duration="226000" />
+      <workItem from="1668678066460" duration="940000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1668626418251</created>
@@ -135,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668643138601</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix broken function.">
+      <created>1668678373466</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668678373467</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +188,8 @@
     <MESSAGE value="Part 2 working." />
     <MESSAGE value="Removed unnecessary derivations." />
     <MESSAGE value="Fix idiomatic issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix idiomatic issues." />
+    <MESSAGE value="Fix broken function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix broken function." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
