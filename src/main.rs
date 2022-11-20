@@ -20,7 +20,7 @@ pub struct FinalVector {
 
 fn read_input_file() -> Vec<String> {
     let data = fs::read_to_string("resource/input").expect("Unable to read file");
-    let split = data.split('\n');
+    let split = data.lines();
     let mut data_vec: Vec<String> = Vec::new();
     for s in split {
         let s = s.trim();
